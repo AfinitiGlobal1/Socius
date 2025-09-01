@@ -5,11 +5,15 @@
   <title>Socius (Get Connected) – Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6;margin:0;background:#fafafa;color:#1a1a1a}
-    main{max-width:900px;margin:40px auto;padding:32px;background:#fff;border:1px solid #eee;border-radius:12px}
-    h1,h2{line-height:1.25} h1{margin-top:0} code{background:#f2f2f2;padding:2px 6px;border-radius:6px}
-    ul{margin:0 0 1rem 1.25rem}
-    .muted{color:#666}
+    :root{--ink:#1a1a1a;--muted:#666;--bg:#fafafa;--card:#fff;--line:#eee}
+    html,body{margin:0;background:var(--bg);color:var(--ink);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    main{max-width:900px;margin:40px auto;padding:32px;background:var(--card);
+      border:1px solid var(--line);border-radius:12px}
+    h1,h2{line-height:1.25;margin:0 0 12px}
+    p,ul{margin:0 0 16px}
+    .muted{color:var(--muted)}
+    code{background:#f5f5f5;padding:2px 6px;border-radius:6px}
   </style>
 </head>
 <body>
@@ -17,80 +21,78 @@
   <h1>Privacy Policy</h1>
   <p class="muted"><strong>Effective date:</strong> 1 Sep 2025</p>
 
-  <p>Welcome to <strong>Socius (Get Connected)</strong> (“<strong>Socius</strong>”, “we”, “us”, or “our”). This Privacy Policy
-  explains how we collect, use, share, and protect your personal information when you use our mobile app and related services
-  (collectively, the “<strong>Service</strong>”). By using Socius, you agree to this Policy.</p>
+  <p>Welcome to <strong>Socius (Get Connected)</strong> (“<strong>Socius</strong>”, “we”, “us”, or “our”). 
+  This Privacy Policy explains what we collect, how we use it, and your choices when using our mobile application and services (the “<strong>Service</strong>”). 
+  By using Socius, you agree to this Policy.</p>
 
-  <h2>1. Information we collect</h2>
+  <h2>1) What we collect</h2>
   <ul>
-    <li><strong>Account data</strong>: name/username, email, phone (optional), password hash, profile photo, date of birth (for eligibility).</li>
-    <li><strong>Content you share</strong>: posts, captions, images, videos, stories/status, comments, reactions, reports you file, and
-      metadata (e.g., upload time, device type, language).</li>
-    <li><strong>Direct messages & calls</strong>: the content you send, recipients, and time stamps (stored to deliver/sync and enforce our Terms).
-      We do not use message content for advertising.</li>
-    <li><strong>Contacts (optional)</strong>: if you allow access, we may read phone contacts to help you find friends. You can revoke this at any time.</li>
-    <li><strong>Usage & device data</strong>: app interactions, log data, crash reports, device identifiers, IP address, OS, app version, and approximate location (from IP).</li>
-    <li><strong>Camera/Microphone/Photos</strong>: when you grant permission to create and upload media.</li>
-    <li><strong>Cookies/Similar tech</strong>: for session management, fraud prevention, and analytics.</li>
+    <li><strong>Account data</strong> you provide: name/username, email address, password hash (if you sign in with email), profile photo, and optional details (about, age, gender, interests, preferred locations).</li>
+    <li><strong>Content you create</strong>: posts, images, videos, status updates, comments, and reactions, including basic upload metadata (time, device/OS, language).</li>
+    <li><strong>Messages</strong>: 1-to-1 or group messages you send/receive are stored to deliver and sync chats and to enforce our Terms. We do not use message content for advertising.</li>
+    <li><strong>Usage & device data</strong>: app interactions, crash logs, device identifiers, IP address, and approximate location derived from IP for security and analytics.</li>
+    <li><strong>Media access</strong> (camera/photos): when you grant permission to take or upload photos/videos.</li>
+    <li><strong>Location</strong> (when permitted): precise or coarse location to show nearby content or to tag content. We do not collect location in the background and you can deny this permission at any time in system settings.</li>
   </ul>
 
-  <h2>2. How we use your information</h2>
+  <h2>2) How we use your data</h2>
   <ul>
-    <li>Provide core features (accounts, feeds, messages, status, search, social graphs).</li>
-    <li>Moderate the Service (detect/remove harmful or illegal content, enforce community guidelines, and fight spam/fraud).</li>
-    <li>Improve safety (block/report tools, rate limiting, abuse prevention).</li>
-    <li>Communicate with you (service notices, changes, support).</li>
-    <li>Analytics and product improvement.</li>
-    <li>Legal compliance and protection of rights.</li>
+    <li>Operate core features: account, feeds, media uploads, status, comments, and messaging.</li>
+    <li>Personalize in-app experiences such as nearby or preferred-location content when location is enabled.</li>
+    <li>Safety and moderation: reporting/blocking tools, abuse prevention, and legal compliance.</li>
+    <li>Analytics, performance, and product improvement.</li>
+    <li>Communications about service updates, security, and support.</li>
   </ul>
 
-  <h2>3. Sharing your information</h2>
+  <h2>3) Android permissions we request & why</h2>
   <ul>
-    <li><strong>With your direction</strong>: when you post or share with others.</li>
-    <li><strong>Service providers</strong>: cloud hosting, analytics, customer support, and moderation vendors bound by confidentiality.</li>
-    <li><strong>For safety & legal reasons</strong>: to comply with law or respond to valid requests; to protect you, us, and others.</li>
-    <li><strong>Business transfers</strong>: in a merger, acquisition, or asset sale, subject to this Policy.</li>
+    <li><code>INTERNET</code>: connect to our servers and deliver content.</li>
+    <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: show nearby content or allow you to tag content with your location (only when you grant permission; no background tracking).</li>
+    <li><code>CAMERA</code>: capture photos/videos to post or update your profile.</li>
+    <li><code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code>: pick media from your device and save app media (subject to Android’s scoped-storage rules).</li>
   </ul>
 
-  <h2>4. Data retention & deletion</h2>
-  <p>We keep personal data only as long as necessary for the purposes above.</p>
+  <h2>4) Sign-in & service providers</h2>
+  <p>You can sign in with email/password or with Google. We use <strong>Supabase</strong> (authentication, database, storage) and other cloud vendors that act as our processors under contract. We don’t sell your personal data and we don’t show third-party ad networks.</p>
+
+  <h2>5) Sharing</h2>
   <ul>
-    <li>When you <strong>delete your account</strong>, we delete or irreversibly anonymize your profile and posts within <strong>30 days</strong>.
-      Backups may persist for up to <strong>90 days</strong> and are automatically purged.</li>
-    <li>We may retain certain information if required by law, to resolve disputes, or to enforce our Terms.</li>
+    <li><strong>With your direction</strong> when you post or share content.</li>
+    <li><strong>With service providers</strong> that help us run the Service (hosting, storage, analytics, moderation) under confidentiality obligations.</li>
+    <li><strong>For safety/legal reasons</strong> or during a business transfer as allowed by law.</li>
   </ul>
 
-  <h2>5. Your choices & rights</h2>
+  <h2>6) Your choices</h2>
   <ul>
-    <li>Access, correct, or delete your data in-app or by contacting us.</li>
-    <li>Control permissions (camera, microphone, photos, contacts, notifications, and location) in your device settings.</li>
-    <li>Opt out of non-essential communications via app settings or the link in our emails.</li>
+    <li>Manage profile data and permissions (camera, photos, location) in your device settings.</li>
+    <li>Use in-app tools to <strong>block</strong> or <strong>report</strong> users/content.</li>
+    <li>Access, correct, or delete your information by contacting us (see Support) or through any in-app account controls we provide.</li>
   </ul>
 
-  <h2>6. Safety & community tools</h2>
+  <h2>7) Data retention & deletion</h2>
   <ul>
-    <li>Report and flag content or users in-app; you can also block or mute accounts.</li>
-    <li>We review reports and may remove content, restrict features, or disable accounts that violate our Terms.</li>
+    <li><strong>How to delete your account:</strong> open the app and go to <em>Profile</em> → scroll to the bottom and tap <em>Delete account</em>. Confirm the prompt to proceed.</li>
+    <li>After you confirm, we remove your profile and content from our active systems. Any remaining copies in system backups are scheduled for secure purge (typically within 90 days). We may retain limited information if required by law or for safety/prevention of abuse.</li>
+    <li>Messages you previously sent may remain in the recipient’s inbox and content others have copied/shared may persist with those users.</li>
   </ul>
 
-  <h2>7. Children’s privacy</h2>
-  <p>Socius is not directed to children under the age required by local law (typically 13 or 16 in the EEA).
-  We remove accounts we learn are ineligible.</p>
+  <h2>8) Children</h2>
+  <p>The Service is not for children below the age permitted by local law (typically 13, or 16 in certain regions). We remove ineligible accounts.</p>
 
-  <h2>8. International transfers</h2>
-  <p>Your data may be processed in countries other than where you live. We use appropriate safeguards for cross-border transfers where required.</p>
+  <h2>9) Security</h2>
+  <p>We use administrative, technical, and physical safeguards appropriate to the data we process. No system is perfectly secure—use a strong, unique password and keep your device updated.</p>
 
-  <h2>9. Security</h2>
-  <p>We use administrative, technical, and physical safeguards to protect your data. No system is 100% secure; please use a strong, unique password and enable available protections.</p>
+  <h2>10) International transfers</h2>
+  <p>Your data may be processed in countries different from your own. Where required, we use appropriate safeguards for cross-border transfers.</p>
 
-  <h2>10. Changes to this Policy</h2>
-  <p>We may update this Policy. We’ll notify you of material changes by in-app notice or email and update the “Effective date”.</p>
+  <h2>11) Changes</h2>
+  <p>We may update this Policy. If we make material changes, we’ll notify you in-app or by email and update the “Effective date”.</p>
 
-  <h2>11. Contact us</h2>
-  <p>If you have questions or requests, contact: <a href="mailto:support@socius.app">support@socius.app</a><br>
-  [Your Company/Developer Name], [Postal Address]</p>
+  <h2>12) Support & contact</h2>
+  <p>If you have questions, requests, or wish to exercise your rights, contact our support team:</p>
+  <p><a href="mailto:team@afinitiglobal.com">team@afinitiglobal.com</a></p>
 
-  <p class="muted">This Policy is provided for general informational purposes and may need adaptation to your jurisdiction.</p>
+  <p class="muted">This Policy summarizes our practices for Socius (Get Connected). Depending on your region, additional rights may apply.</p>
 </main>
 </body>
 </html>
